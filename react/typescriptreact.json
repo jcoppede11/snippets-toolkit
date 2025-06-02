@@ -1,0 +1,27 @@
+{
+	"React input component with useId, label and name": {
+		"prefix": "hookId",
+		"body": [
+			"import { useId } from 'react';",
+			"",
+			"interface ${1:FormInput}Props {",
+			"  id?: string;",
+			"  label?: string;",
+			"  name?: string;",
+			"}",
+			"",
+			"export const ${1:FormInput} = ({ id, name, label }: ${1:FormInput}Props) => {",
+			"  const generatedId = useId();",
+			"  const inputId = id ? `\\${generatedId}-\\${id}` : generatedId;",
+			"",
+			"  return (",
+			"    <div>",
+			"      {label && <label htmlFor={inputId}>{label}</label>}",
+			"      <input id={inputId} name={name ?? id ?? generatedId} />",
+			"    </div>",
+			"  );",
+			"};"
+		],
+		"description": "Uses the useId hook to generate a unique ID for the input's id attribute and the label's htmlFor, combining it with the id passed as a prop"
+	}
+}
