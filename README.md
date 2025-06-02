@@ -3,15 +3,6 @@
 Colección personal de snippets reutilizables de diferentes tecnologías, pensada para mejorar la productividad a la hora de programar.
 ---
 
-## 📂 Estructura del repositorio
-
-snippets-toolkit/
-│
-├── react/ # Snippets para componentes, hooks, etc.
-├── node/ # Funciones, middlewares, estructuras de API.
-└── README.md # Este archivo.
----
-
 ## ⚙️ ¿Cómo usarlos?
 
 1. Abrí tu editor, por ejemplo VSCode.
