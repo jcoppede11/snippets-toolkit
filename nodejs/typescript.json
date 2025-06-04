@@ -1,0 +1,58 @@
+{
+	"Node.js create route GET": {
+		"prefix": "nodeg",
+		"body": [
+			"import { Router } from 'express';",
+			"import { controllerName } from '../controllers/controllerName';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = Router();",
+			"",
+			"${1:${TM_FILENAME_BASE}}.get('/path', controllerName.getMethod);",
+			"",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Node.js create route with Express"
+	},
+	"Node.js create route POST": {
+		"prefix": "nodep",
+		"body": [
+			"import { Router } from 'express';",
+			"import { controllerName } from '../controllers/controllerName';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = Router();",
+			"",
+			"${1:${TM_FILENAME_BASE}}.post('/path', controllerName.postMethod);",
+			"",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Node.js create route with Express"
+	},
+	"Node.js create route PUT": {
+		"prefix": "nodeput",
+		"body": [
+			"import { Router } from 'express';",
+			"import { controllerName } from '../controllers/controllerName';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = Router();",
+			"",
+			"${1:${TM_FILENAME_BASE}}.put('/path', controllerName.putMethod);",
+			"",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Node.js create route with Express"
+	},
+	"Node.js create route DELETE": {
+		"prefix": "noded",
+		"body": [
+			"import { Router } from 'express';",
+			"import { controllerName } from '../controllers/controllerName';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = Router();",
+			"",
+			"${1:${TM_FILENAME_BASE}}.delete('/path', controllerName.deleteMethod);",
+			"",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Node.js create route with Express"
+	}
+}
